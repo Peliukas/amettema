@@ -23,22 +23,29 @@
                 </div>
             </div>
             <div class="column scene scene--card">
-                <div class="card" :class="{'is-flipped': this.productContainerActive}"
-                     v-on:click="productContainerActive = !productContainerActive">
-                    <div class="products-container card__face card__face--front flex-center">
+                <div class="card" :class="{'is-flipped': this.productContainerActive}">
+                    <div class="products-container card__face card__face--front flex-center"
+                         v-on:click="productContainerActive = !productContainerActive">
                         <h3 class="service-block-title">Products</h3>
                     </div>
                     <div class="card__face--back card__face flex-center">
-                        <ul>
-                            <li>заборов</li>
-                            <li>оград</li>
-                            <li>ворот</li>
-                            <li>лестничных ограждений</li>
-                            <li>лестниц различной конфигурации</li>
-                            <li>козырьков</li>
-                            <li>решеток</li>
-                            <li>калиток</li>
-                        </ul>
+                        <div>
+                            <ul v-on:click="productContainerActive = !productContainerActive">
+                                <li>заборов</li>
+                                <li>оград</li>
+                                <li>ворот</li>
+                                <li>лестничных ограждений</li>
+                                <li>лестниц различной конфигурации</li>
+                                <li>козырьков</li>
+                                <li>решеток</li>
+                                <li>калиток</li>
+                            </ul>
+                            <button class="button is-primary tiny-margin-vertical"
+                                    v-on:click="showProductSliderModal()">
+                                <i class="fas fa-info tiny-margin-horizontal"></i>
+                                More details
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -58,33 +65,139 @@
                 </div>
             </div>
         </div>
+        <modal-window name="slider-modal" width="700" height="500">
+            <div class="container">
+                <slick ref="slick" :options="slickOptions">
+                    <div class="slick-slide">
+                        <img src="/images/products/balcony_1.jpg" class="small-margin-vertical slick-slide-img" alt="">
+                        <p>
+                            Пример балконного ограждения с применением изделий 304S2; 304S4.90; 304S4. Секло EuroFloat
+                            толщиной 8мм. Высота стекла 680мм. Толщина стекла 8 мм. Края стекла отполированы. Расстояние
+                            между столбами max. 1250 мм.
+                        </p>
+                        <strong>
+                            Цена включая монтаж , 90 Eur./м.
+                        </strong>
+                    </div>
+                    <div class="slick-slide">
+                        <img src="/images/products/balcony_2.jpg" class="small-margin-vertical slick-slide-img" alt="">
+                        <p>
+                            Аналогичный вариант несущих столбиков , но с креплением к вертикальной поверхности
+                            представлен на фото ниже. Количество заполняющих трубок, по пожеланию заказчика.
+                        </p>
+                        <strong>
+                            Цена договорная
+                        </strong>
+                    </div>
+                    <div class="slick-slide">
+                        <div class="columns">
+                            <div class="column flex-center">
+                                <img src="/images/products/pole_1.png" class="small-margin-vertical" alt="">
+                            </div>
+                            <div class="column flex-center">
+                                <div>
+                                    <p>
+                                        Столбик D42.4x2мм для перил из нержавеющей стали AISI304 , артикул 304S2 с 2- мя
+                                        держателями стекла. Стандартная высота с поручнем 970мм. Поверхность
+                                        шлифованная.
+                                    </p>
+                                    <strong>Цена 37 Eur</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick-slide">
+                        <div class="columns">
+                            <div class="column flex-center">
+                                <img src="/images/products/pole_2.png" class="small-margin-vertical" alt="">
+                            </div>
+                            <div class="column flex-center">
+                                <div>
+                                    <p>
+                                        Столбик D42.4x2мм для перил из нержавеющей стали AISI304. артикул 304S4 с 4-мя
+                                        держателями стекла. Стандартная высота с поручнем 970мм. Поверхность
+                                        шлифованная.
+                                    </p>
+                                    <strong>
+                                        Цена 48 Eur.
+                                    </strong>
+                                    <i> Возможны варианты расположения держателей стекла по индивидуальному заказу.</i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick-slide">
+                        <div class="columns">
+                            <div class="column flex-center">
+                                <img src="/images/products/pole_3.png" class="small-margin-vertical" alt="">
+                            </div>
+                            <div class="column flex-center">
+                                <div>
+                                    <p>
+                                        Столбик со сварным фланцем D42.4x2мм для перил из нержавеющей стали AISI 304,
+                                        артикул 304Z4, с 4 –мя держателями заполняющих трубок D12. Cтандартная высота с
+                                        поручнем 970мм. Поверхность шлифованная.
+                                    </p>
+                                    <strong>
+                                        Цена 35 Eur.
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick-slide">
+                        <div class="columns">
+                            <div class="column flex-center">
+                                <img src="/images/products/rails_1.png" class="small-margin-vertical" alt="">
+                            </div>
+                            <div class="column flex-center">
+                                <div>
+                                    <p>
+                                        Пример полностью сварных перил, для людей с ограниченными возможностями.
+                                    </p>
+                                    <strong>
+                                        Цена с монтажом 95 Eur./м.
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </slick>
+            </div>
+        </modal-window>
     </section>
 </template>
 
 <script>
+    import Slick from 'vue-slick';
+
     export default {
         name: "Services",
+        components: {Slick},
         data: function () {
             return {
                 techContainerActive: false,
                 productContainerActive: false,
-                glassContainerActive: false
+                glassContainerActive: false,
+                slickOptions: {
+                    slidesToShow: 1,
+                    arrows: true,
+                    dots: true
+                },
             }
         },
         methods: {
-            // flipCard(cardName){
-            //     switch (cardName){
-            //         case 'tech':
-            //             techContainerActive = !techContainerActive;
-            //             break;
-            //         case 'products':
-            //             productContainerActive = !productContainerActive;
-            //             break;
-            //         case 'glass':
-            //             glassContainerActive = !glassContainerActive;
-            //             break;
-            //     }
-            // }
+            showProductSliderModal() {
+                this.$modal.show('slider-modal');
+            },
+            next() {
+                this.$refs.slick.next();
+            },
+
+            prev() {
+                this.$refs.slick.prev();
+            },
+
         }
     }
 </script>
@@ -158,10 +271,38 @@
 
     .service-block-title {
         font-size: 2em;
+        font-weight: bold;
+        text-shadow: 1px 1px 5px darkblue;
     }
 
     .card__face--back {
         transform: rotateY(180deg);
+    }
+
+    .slick-slide-img {
+        width: 100%;
+    }
+
+    /deep/ .slick-dots {
+        bottom: 120px;
+    }
+
+    /deep/ .slick-arrow:before {
+        color: #1a4255;
+    }
+
+    .slick-slide {
+        padding: 10px;
+    }
+
+    /deep/ .slick-prev {
+        left: 25px !important;
+        z-index: 999 !important;
+    }
+
+    /deep/ .slick-next {
+        right: 25px !important;
+        z-index: 999 !important;
     }
 
 

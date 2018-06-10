@@ -1,3 +1,4 @@
+
 .banner-text-wrapper {
     background: #0d46607d;
     padding: 10px;
@@ -15,6 +16,21 @@
 .small-margin-vertical {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.tiny-margin-vertical {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.small-margin-horizontal {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.tiny-margin-horizontal {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .flex-center-horizontal {
