@@ -1,14 +1,11 @@
 <template>
     <section>
-        <div class="container">
-            <h2 class="title text-center">Services</h2>
-        </div>
         <div class="columns small-margin-vertical">
             <div class="column scene scene--card">
                 <div class="card" :class="{'is-flipped': this.techContainerActive}"
                      v-on:click="techContainerActive = !techContainerActive">
                     <div class="tech-container card__face card__face--front flex-center">
-                        <h3 class="service-block-title">Tech</h3>
+                        <h3 class="service-block-title">Services</h3>
                     </div>
                     <div class="card__face--back card__face flex-center">
                         <ul>
@@ -26,7 +23,7 @@
                 <div class="card" :class="{'is-flipped': this.productContainerActive}">
                     <div class="products-container card__face card__face--front flex-center"
                          v-on:click="productContainerActive = !productContainerActive">
-                        <h3 class="service-block-title">Products</h3>
+                        <h3 class="service-block-title">Metal products</h3>
                     </div>
                     <div class="card__face--back card__face flex-center">
                         <div>
@@ -40,7 +37,7 @@
                                 <li>решеток</li>
                                 <li>калиток</li>
                             </ul>
-                            <button class="button is-primary tiny-margin-vertical"
+                            <button class="button is-info tiny-margin-vertical"
                                     v-on:click="showProductSliderModal()">
                                 <i class="fas fa-info tiny-margin-horizontal"></i>
                                 More details
@@ -53,7 +50,7 @@
                 <div class="card" :class="{'is-flipped': this.glassContainerActive}"
                      v-on:click="glassContainerActive= !glassContainerActive">
                     <div class="glass-container card__face card__face--front flex-center">
-                        <h3 class="service-block-title">Glass</h3>
+                        <h3 class="service-block-title">Glass products</h3>
                     </div>
                     <div class="card__face--back card__face flex-center">
                         <ul>
@@ -129,7 +126,7 @@
                     <div class="slick-slide">
                         <div class="columns">
                             <div class="column flex-center">
-                                <img src="/images/products/pole_3.png" class="small-margin-vertical" alt="">
+                                <img src="/images/products/pole_3.jpg" class="small-margin-vertical" alt="">
                             </div>
                             <div class="column flex-center">
                                 <div>
@@ -146,21 +143,13 @@
                         </div>
                     </div>
                     <div class="slick-slide">
-                        <div class="columns">
-                            <div class="column flex-center">
-                                <img src="/images/products/rails_1.png" class="small-margin-vertical" alt="">
-                            </div>
-                            <div class="column flex-center">
-                                <div>
-                                    <p>
-                                        Пример полностью сварных перил, для людей с ограниченными возможностями.
-                                    </p>
-                                    <strong>
-                                        Цена с монтажом 95 Eur./м.
-                                    </strong>
-                                </div>
-                            </div>
-                        </div>
+                        <img src="/images/products/rails_1.jpg" class="small-margin-vertical slick-slide-img" alt="">
+                        <p>
+                            Пример полностью сварных перил, для людей с ограниченными возможностями.
+                        </p>
+                        <strong>
+                            Цена с монтажом 95 Eur./м.
+                        </strong>
                     </div>
                 </slick>
             </div>
@@ -220,12 +209,6 @@
         background: url("/images/glass.jpg");
     }
 
-    /*.services-grid{*/
-    /*display: grid;*/
-    /*grid-template-columns: 2fr 2fr;*/
-    /*grid-template-rows: 1fr 1fr 1fr;*/
-    /*}*/
-
     ul {
         list-style: none;
         font-size: 0.8em;
@@ -281,6 +264,7 @@
 
     .slick-slide-img {
         width: 100%;
+        max-height: 380px;
     }
 
     /deep/ .slick-dots {

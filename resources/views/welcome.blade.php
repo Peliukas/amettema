@@ -18,9 +18,10 @@
 </head>
 <body>
 <div id="app">
-    {{--    @include('header')--}}
+    @include('header')
     @include('banner')
     @include('body')
+    @include('footer')
 </div>
 <script src="{{ mix('js/app.js') }}"></script>
 <script>
@@ -29,5 +30,4 @@
             ]) !!};
 </script>
 </body>
-@include('footer')
 </html>

@@ -4,8 +4,16 @@
     padding: 10px;
 }
 
+.no-padding {
+    padding: 0;
+}
+
 .text-center {
     text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
 }
 
 .medium-margin-vertical {
@@ -38,6 +46,16 @@
     justify-content: center;
 }
 
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-space-around {
+    display: flex;
+    justify-content: space-around;
+}
+
 .flex-center-vertical {
     display: flex;
     align-items: center;
@@ -68,17 +86,46 @@
 }
 
 .short-activity-description-wrapper {
-    font-size: 1.2em;
+    font-size: 0.8em;
     font-weight: 600;
 }
 
 footer {
-    background-color: #21536a !important;
+    /*background-color: #21536a !important;*/
+    /*padding: 0rem 1.5rem 0rem!important;*/
 }
 
-footer p, footer p i {
+.footer-contact-list li {
+    color: #3962ff;
+    font-size: large;
+}
+
+.footer-contact-list span {
+    margin-left: 5px;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.is-3 {
+    font-size: 2em;
+}
+
+.light-font {
+    font-weight: 400;
+}
+
+.white-text {
     color: white;
-    font-size: x-large;
+}
+
+.top-contact-bar {
+    font-weight: 600;
+    position: absolute;
+    width: 100%;
+    background: #3d66789e;
+    color: cornsilk;
 }
 
 

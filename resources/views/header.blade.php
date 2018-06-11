@@ -1,23 +1,16 @@
-<nav class="navbar is-dark">
-    <div class="container">
-        <div class="navbar-brand">
-            <a class="navbar-item">
-                <span class="logo-part-1">amet</span>
-                <span class="logo-part-2">tema</span>
-            </a>
-        </div>
-        <div class="navbar-menu">
-            <div class="navbar-end">
-                <a class="navbar-item">
-                    Home
-                </a>
-                <a class="navbar-item">
-                    Services
-                </a>
-                <a class="navbar-item ">
-                    Gallery
-                </a>
-            </div>
-        </div>
+<section>
+    <div class="flex-space-around flex-center-vertical top-contact-bar">
+        <span>
+            <i class="fas fa-at"></i>
+            info@amettema.eu
+        </span>
+        <span>
+            <i class="fas fa-phone-square"></i>
+            +370 0909 8812
+        </span>
+        <span>
+            <i class="fas fa-building"></i>
+            CVR: 22120430
+        </span>
     </div>
-</nav>
+</section>

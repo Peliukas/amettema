@@ -1,5 +1,8 @@
 <template>
     <div class="container">
+        <div class="flex-center medium-margin-vertical">
+            <h3 class="is-uppercase is-3 white-text">we bring</h3>
+        </div>
         <div class="columns">
             <div class="column">
                 <div class="flex-center">
