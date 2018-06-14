@@ -1,7 +1,7 @@
 <template>
     <section>
         <div class="columns small-margin-vertical">
-            <div class="column scene scene--card">
+            <div class="column is-one-third-desktop is-one-third-tablet is-full-mobile scene scene--card">
                 <div class="card" :class="{'is-flipped': this.techContainerActive}"
                      v-on:click="techContainerActive = !techContainerActive">
                     <div class="tech-container card__face card__face--front flex-center">
@@ -19,7 +19,7 @@
                     </div>
                 </div>
             </div>
-            <div class="column scene scene--card">
+            <div class="column is-one-third-desktop is-one-third-tablet is-full-mobile scene scene--card">
                 <div class="card" :class="{'is-flipped': this.productContainerActive}">
                     <div class="products-container card__face card__face--front flex-center"
                          v-on:click="productContainerActive = !productContainerActive">
@@ -46,7 +46,7 @@
                     </div>
                 </div>
             </div>
-            <div class="column scene scene--card">
+            <div class="column is-one-third-desktop is-one-third-tablet is-full-mobile scene scene--card">
                 <div class="card" :class="{'is-flipped': this.glassContainerActive}"
                      v-on:click="glassContainerActive= !glassContainerActive">
                     <div class="glass-container card__face card__face--front flex-center">
@@ -223,7 +223,6 @@
     /*Card flipper*/
 
     .scene {
-        width: 200px;
         height: 260px;
         margin: 40px 0;
         perspective: 600px;

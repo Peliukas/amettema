@@ -30,7 +30,8 @@
         <services></services>
     </div>
 </section>
-<section>
-
+<section class="contact-section-container">
+    <div class="contact-section-container-wrapper">
+        <contact-section></contact-section>
+    </div>
 </section>
-

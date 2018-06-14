@@ -1,5 +1,5 @@
 <section>
-    <div class="flex-space-around flex-center-vertical top-contact-bar">
+    <div class="flex-space-around flex-center-vertical is-mobile top-contact-bar">
         <span>
             <i class="fas fa-at"></i>
             info@amettema.eu
@@ -10,7 +10,7 @@
         </span>
         <span>
             <i class="fas fa-building"></i>
-            CVR: 22120430
+            22120430
         </span>
     </div>
 </section>

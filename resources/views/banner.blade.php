@@ -1,4 +1,4 @@
-<section class="hero is-info is-large is-bold main-banner-block">
+<section class="hero is-info is-medium is-bold main-banner-block">
     <div class="hero-body ">
         <div class="container banner-text-wrapper">
             <h2 class="title">Amettema</h2>

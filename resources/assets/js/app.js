@@ -14,6 +14,7 @@ Vue.use(VueGoogleMaps, {
 Vue.component('google-map', require('./components/GoogleMap.vue'));
 Vue.component('presentation', require('./components/Presentation.vue'));
 Vue.component('services', require('./components/Services.vue'));
+Vue.component('contact-section', require('./components/ContactSection.vue'));
 
 const app = new Vue({
     el: '#app'

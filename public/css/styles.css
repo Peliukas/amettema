@@ -8,6 +8,10 @@
     padding: 0;
 }
 
+.no-margin-bottom {
+    margin-bottom: 0 !important;
+}
+
 .text-center {
     text-align: center;
 }
@@ -90,14 +94,11 @@
     font-weight: 600;
 }
 
-footer {
-    /*background-color: #21536a !important;*/
-    /*padding: 0rem 1.5rem 0rem!important;*/
-}
-
-.footer-contact-list li {
-    color: #3962ff;
-    font-size: large;
+.footer-contact-list {
+    background: cornflowerblue;
+    color: white;
+    font-weight: 700;
+    padding-top: 5px;
 }
 
 .footer-contact-list span {
@@ -121,12 +122,39 @@ footer {
 }
 
 .top-contact-bar {
-    font-weight: 600;
     position: absolute;
     width: 100%;
     background: #3d66789e;
+}
+
+.top-contact-bar span {
+    font-weight: 600;
     color: cornsilk;
 }
 
+.contact-section-container {
+    background-image: url("/images/paper-pen.jpg");
+    background-size: cover;
+    background-position: center;
+}
 
+.footer-contact-list-wrapper {
+    background: cornflowerblue;
+}
 
+.contact-section-container h3 {
+    color: white;
+}
+
+.contact-section-container-wrapper {
+    padding: 40px;
+    background: #4a4a4a73;
+}
+
+@media (max-width: 425px) {
+
+    .top-contact-bar span {
+        font-size: 0.7em;
+    }
+
+}
