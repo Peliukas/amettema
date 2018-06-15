@@ -51445,9 +51445,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "Presentation"
@@ -51494,9 +51491,9 @@ var staticRenderFns = [
               ),
               _vm._v(" "),
               _c("div", [
-                _c("p", [
+                _c("p", { staticClass: "text-center" }, [
                   _vm._v(
-                    "\n                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\n                            incididunt ut labore\n                        "
+                    "\n                            Each of our staff members is a professional, with over 15 years of experience\n                        "
                   )
                 ])
               ])
@@ -51522,9 +51519,9 @@ var staticRenderFns = [
               ),
               _vm._v(" "),
               _c("div", [
-                _c("p", [
+                _c("p", { staticClass: "text-center" }, [
                   _vm._v(
-                    "\n                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\n                            incididunt ut labore\n                        "
+                    "\n                            Enforcing high standards to services and materials we provide\n                        "
                   )
                 ])
               ])
@@ -51550,9 +51547,9 @@ var staticRenderFns = [
               ),
               _vm._v(" "),
               _c("div", [
-                _c("p", [
+                _c("p", { staticClass: "text-center" }, [
                   _vm._v(
-                    "\n                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\n                            incididunt ut labore\n                        "
+                    "\n                            Innovative solutions to non standard challenges\n                        "
                   )
                 ])
               ])
@@ -51671,7 +51668,6 @@ exports.push([module.i, "\n.tech-container[data-v-0b29d7d5], .glass-container[da
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_slick__ = __webpack_require__(96);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_slick___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_slick__);
-//
 //
 //
 //
@@ -55190,21 +55186,19 @@ var render = function() {
                           }
                         },
                         [
-                          _c("li", [_vm._v("заборов")]),
+                          _c("li", [_vm._v("Fences")]),
                           _vm._v(" "),
-                          _c("li", [_vm._v("оград")]),
+                          _c("li", [_vm._v("Gates")]),
                           _vm._v(" "),
-                          _c("li", [_vm._v("ворот")]),
+                          _c("li", [_vm._v("Staircase hand rails")]),
                           _vm._v(" "),
-                          _c("li", [_vm._v("лестничных ограждений")]),
+                          _c("li", [_vm._v("Custom stair configurations")]),
                           _vm._v(" "),
-                          _c("li", [_vm._v("лестниц различной конфигурации")]),
+                          _c("li", [_vm._v("Peaks")]),
                           _vm._v(" "),
-                          _c("li", [_vm._v("козырьков")]),
+                          _c("li", [_vm._v("Bars")]),
                           _vm._v(" "),
-                          _c("li", [_vm._v("решеток")]),
-                          _vm._v(" "),
-                          _c("li", [_vm._v("калиток")])
+                          _c("li", [_vm._v("Wickets")])
                         ]
                       ),
                       _vm._v(" "),
@@ -55443,17 +55437,17 @@ var staticRenderFns = [
       { staticClass: "card__face--back card__face flex-center" },
       [
         _c("ul", [
-          _c("li", [_vm._v(" сварка металлов по технологии TIG")]),
+          _c("li", [_vm._v(" Metal welding using TIG")]),
           _vm._v(" "),
-          _c("li", [_vm._v(" шлифовка")]),
+          _c("li", [_vm._v(" Grinding")]),
           _vm._v(" "),
-          _c("li", [_vm._v(" сверление")]),
+          _c("li", [_vm._v(" Drilling")]),
           _vm._v(" "),
-          _c("li", [_vm._v(" лазерный раскрой металлического листа до 20 мм")]),
+          _c("li", [_vm._v(" Cutting of metal sheets using laser")]),
           _vm._v(" "),
-          _c("li", [_vm._v(" антикоррозийная защита металла")]),
+          _c("li", [_vm._v(" Metal anti-corrosion covering")]),
           _vm._v(" "),
-          _c("li", [_vm._v(" сборочные работы")])
+          _c("li", [_vm._v(" Welding tasks")])
         ])
       ]
     )
@@ -55483,13 +55477,11 @@ var staticRenderFns = [
       { staticClass: "card__face--back card__face flex-center" },
       [
         _c("ul", [
-          _c("li", [_vm._v("Каленое прозрачное стекло")]),
+          _c("li", [_vm._v("Gilded transparent glass")]),
           _vm._v(" "),
-          _c("li", [
-            _vm._v("Каленое матовое и тонированное стекло (бронза, серый)")
-          ]),
+          _c("li", [_vm._v("Gilded matt and toned glass (bronze, silver)")]),
           _vm._v(" "),
-          _c("li", [_vm._v("Tриплекс")])
+          _c("li", [_vm._v("Triplex")])
         ])
       ]
     )
@@ -55649,6 +55641,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "ContactSection",
@@ -55675,33 +55668,33 @@ var render = function() {
     "div",
     { staticClass: "columns" },
     [
-      _c("div", { staticClass: "column is-half-desktop is-full-mobile" }, [
-        _c("h3", { staticClass: "is-3 title" }, [
+      _c("div", { staticClass: "column is-full" }, [
+        _c("h3", { staticClass: "is-3 title text-center" }, [
           _vm._v("Would you like to know more?")
         ]),
         _vm._v(" "),
-        _c("h4", { staticClass: "is-4 subtitle" }, [
+        _c("h4", { staticClass: "is-4 subtitle text-center" }, [
           _vm._v("Ping us a message")
         ]),
         _vm._v(" "),
-        _c(
-          "button",
-          {
-            staticClass: "button is-info",
-            on: {
-              click: function($event) {
-                _vm.showContactFormModal()
+        _c("div", { staticClass: "flex-center" }, [
+          _c(
+            "button",
+            {
+              staticClass: "button is-info",
+              on: {
+                click: function($event) {
+                  _vm.showContactFormModal()
+                }
               }
-            }
-          },
-          [
-            _c("i", { staticClass: "far fa-envelope" }),
-            _vm._v("\n            Get in touch\n        ")
-          ]
-        )
+            },
+            [
+              _c("i", { staticClass: "far fa-envelope" }),
+              _vm._v("\n                Get in touch\n            ")
+            ]
+          )
+        ])
       ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "column is-half-desktop is-full-mobile" }),
       _vm._v(" "),
       _c(
         "modal-window",

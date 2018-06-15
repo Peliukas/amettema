@@ -1,9 +1,15 @@
-<section class="hero is-info is-medium is-bold main-banner-block">
-    <div class="hero-body ">
-        <div class="container banner-text-wrapper">
-            <h2 class="title">Amettema</h2>
-            <h3 class="subtitle">Изготовление металлоизделий и металлоконструкций на современном высокоточном
-                оборудовании</h3>
+<section class="main-banner-block light-box-shadow">
+    <div class="no-padding no-margin">
+        <div class="banner-text-wrapper">
+            <div class="container">
+                <h3 class="title">
+                    <span class="success-text">different</span>
+                    <span class="white-text">is the new ordinary</span></h3>
+                <h4 class="subtitle white-text">
+                    and we are ones of the best at providing that
+                </h4>
+                <button class="button is-light">Services</button>
+            </div>
         </div>
     </div>
 </section>

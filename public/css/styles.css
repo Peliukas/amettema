@@ -1,11 +1,30 @@
 
 .banner-text-wrapper {
-    background: #0d46607d;
-    padding: 10px;
+    background: #395588d1;
+    padding: 9em 0px 9em 0px;
+}
+
+.site-logo img {
+    height: 60px;
+}
+
+.site-logo strong {
+    color: cornsilk;
+    font-size: 1.2em;
+    margin-left: 10px;
+    text-shadow: 1px 1px 1px lightslategrey;
+}
+
+.light-box-shadow {
+    box-shadow: 0px 0px 4px 1px #4a4a4a;
 }
 
 .no-padding {
     padding: 0;
+}
+
+.no-margin {
+    margin: 0 !important;
 }
 
 .no-margin-bottom {
@@ -121,14 +140,26 @@
     color: white;
 }
 
+.success-text {
+    color: #23d160;
+}
+
+.red-divider:after {
+    content: '';
+    width: 90px;
+    height: 2px;
+    background: darkred;
+}
+
 .top-contact-bar {
     position: absolute;
     width: 100%;
-    background: #3d66789e;
+    padding: 5px;
+    background: #6495edd1;
 }
 
 .top-contact-bar span {
-    font-weight: 600;
+    font-weight: 100;
     color: cornsilk;
 }
 

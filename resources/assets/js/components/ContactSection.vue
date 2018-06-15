@@ -1,14 +1,15 @@
 <template>
     <div class="columns">
-        <div class="column is-half-desktop is-full-mobile">
-            <h3 class="is-3 title">Would you like to know more?</h3>
-            <h4 class="is-4 subtitle">Ping us a message</h4>
-            <button class="button is-info" v-on:click="showContactFormModal()">
-                <i class="far fa-envelope"></i>
-                Get in touch
-            </button>
+        <div class="column is-full">
+            <h3 class="is-3 title text-center">Would you like to know more?</h3>
+            <h4 class="is-4 subtitle text-center">Ping us a message</h4>
+            <div class="flex-center">
+                <button class="button is-info" v-on:click="showContactFormModal()">
+                    <i class="far fa-envelope"></i>
+                    Get in touch
+                </button>
+            </div>
         </div>
-        <div class="column is-half-desktop is-full-mobile"></div>
         <modal-window name="contact-form-modal" width="400" height="520">
             <div class="form-wrapper">
                 <div class="flex-space-between">

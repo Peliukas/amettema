@@ -9,12 +9,12 @@
                     </div>
                     <div class="card__face--back card__face flex-center">
                         <ul>
-                            <li> сварка металлов по технологии TIG</li>
-                            <li> шлифовка</li>
-                            <li> сверление</li>
-                            <li> лазерный раскрой металлического листа до 20 мм</li>
-                            <li> антикоррозийная защита металла</li>
-                            <li> сборочные работы</li>
+                            <li> Metal welding using TIG</li>
+                            <li> Grinding</li>
+                            <li> Drilling</li>
+                            <li> Cutting of metal sheets using laser</li>
+                            <li> Metal anti-corrosion covering</li>
+                            <li> Welding tasks</li>
                         </ul>
                     </div>
                 </div>
@@ -28,14 +28,13 @@
                     <div class="card__face--back card__face flex-center">
                         <div>
                             <ul v-on:click="productContainerActive = !productContainerActive">
-                                <li>заборов</li>
-                                <li>оград</li>
-                                <li>ворот</li>
-                                <li>лестничных ограждений</li>
-                                <li>лестниц различной конфигурации</li>
-                                <li>козырьков</li>
-                                <li>решеток</li>
-                                <li>калиток</li>
+                                <li>Fences</li>
+                                <li>Gates</li>
+                                <li>Staircase hand rails</li>
+                                <li>Custom stair configurations</li>
+                                <li>Peaks</li>
+                                <li>Bars</li>
+                                <li>Wickets</li>
                             </ul>
                             <button class="button is-info tiny-margin-vertical"
                                     v-on:click="showProductSliderModal()">
@@ -54,9 +53,9 @@
                     </div>
                     <div class="card__face--back card__face flex-center">
                         <ul>
-                            <li>Каленое прозрачное стекло</li>
-                            <li>Каленое матовое и тонированное стекло (бронза, серый)</li>
-                            <li>Tриплекс</li>
+                            <li>Gilded transparent glass</li>
+                            <li>Gilded matt and toned glass (bronze, silver)</li>
+                            <li>Triplex</li>
                         </ul>
                     </div>
                 </div>

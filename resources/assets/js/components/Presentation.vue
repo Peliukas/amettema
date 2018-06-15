@@ -14,9 +14,8 @@
                             Experience
                         </h5>
                         <div>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore
+                            <p class="text-center">
+                                Each of our staff members is a professional, with over 15 years of experience
                             </p>
                         </div>
                     </div>
@@ -33,9 +32,8 @@
                             Quality
                         </h5>
                         <div>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore
+                            <p class="text-center">
+                                Enforcing high standards to services and materials we provide
                             </p>
                         </div>
                     </div>
@@ -52,9 +50,8 @@
                             Versality
                         </h5>
                         <div>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore
+                            <p class="text-center">
+                                Innovative solutions to non standard challenges
                             </p>
                         </div>
                     </div>

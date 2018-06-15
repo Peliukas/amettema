@@ -1,5 +1,9 @@
 <section>
     <div class="flex-space-around flex-center-vertical is-mobile top-contact-bar">
+        <div class="site-logo flex-center">
+            <img src="/images/amettema_logo.png">
+            <strong class="is-uppercase">amettema</strong>
+        </div>
         <span>
             <i class="fas fa-at"></i>
             info@amettema.eu
