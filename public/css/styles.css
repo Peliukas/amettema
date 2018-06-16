@@ -118,6 +118,8 @@
     color: white;
     font-weight: 700;
     padding-top: 5px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .footer-contact-list span {
@@ -138,20 +140,38 @@
 
 .white-text {
     color: white;
+    animation: fade-in 2s;
+}
+
+.black-text {
+    color: black;
 }
 
 .success-text {
     color: #23d160;
+    animation: fade-in 1s;
+}
+
+.danger-text {
+    color: #ff3860;
+    animation: fade-in 2s;
+}
+
+.red-divider {
+    position: relative;
 }
 
 .red-divider:after {
+    left: 48%;
     content: '';
-    width: 90px;
+    width: 4.5%;
     height: 2px;
     background: darkred;
+    position: absolute;
+    bottom: -10px;
 }
 
-.top-contact-bar {
+.top-contact-bar-wrapper {
     position: absolute;
     width: 100%;
     padding: 5px;
@@ -161,6 +181,7 @@
 .top-contact-bar span {
     font-weight: 100;
     color: cornsilk;
+    margin: 0 20px;
 }
 
 .contact-section-container {
@@ -173,6 +194,10 @@
     background: cornflowerblue;
 }
 
+.footer-contact-item {
+    margin: 5px 20px;
+}
+
 .contact-section-container h3 {
     color: white;
 }
@@ -182,10 +207,56 @@
     background: #4a4a4a73;
 }
 
-@media (max-width: 425px) {
+.no-text-decoration {
+    text-decoration: none;
+}
+
+.container-fade-in {
+    animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .top-banner-body-text .title, .is-3 {
+        font-size: 1.2em !important;
+    }
+
+    .top-banner-body-text .subtitle, .is-4 {
+        font-size: 0.9em !important;
+    }
 
     .top-contact-bar span {
-        font-size: 0.7em;
+        font-size: small;
+        margin: 0 5px;
+    }
+
+    .footer-contact-list {
+        font-size: small;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    .top-contact-bar-wrapper {
+        justify-content: center;
+    }
+
+    .top-contact-bar {
+        display: none;
+    }
+
+    .footer-contact-list {
+        display: block;
     }
 
 }
